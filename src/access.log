@@ -1,1 +1,8 @@
 ::1 - - [12/Sep/2019:23:04:32 +0000] "PUT /api/usuarios/5d7acb2320619820bc682249 HTTP/1.1" 200 104 "-" "PostmanRuntime/7.16.3"
+::1 - - [12/Sep/2019:23:51:54 +0000] "POST /api/usuarios/search/Cristiano%20Ronaldo HTTP/1.1" 404 179 "-" "PostmanRuntime/7.16.3"
+::1 - - [12/Sep/2019:23:52:21 +0000] "GET /api/usuarios/search/Cristiano%20Ronaldo HTTP/1.1" 404 178 "-" "PostmanRuntime/7.16.3"
+::1 - - [12/Sep/2019:23:52:25 +0000] "GET /api/usuarios/search/Cristiano HTTP/1.1" 404 168 "-" "PostmanRuntime/7.16.3"
+::1 - - [12/Sep/2019:23:52:41 +0000] "GET /api/usuarios/search/Lionel HTTP/1.1" 404 165 "-" "PostmanRuntime/7.16.3"
+::1 - - [12/Sep/2019:23:52:45 +0000] "GET /api/usuarios/search/mesa HTTP/1.1" 404 163 "-" "PostmanRuntime/7.16.3"
+::1 - - [12/Sep/2019:23:52:53 +0000] "GET /api/search/Lionel HTTP/1.1" 404 156 "-" "PostmanRuntime/7.16.3"
+::1 - - [12/Sep/2019:23:53:03 +0000] "GET /api/usuarios/search/Lionel HTTP/1.1" 404 165 "-" "PostmanRuntime/7.16.3"

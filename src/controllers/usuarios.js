@@ -1,8 +1,16 @@
-const Usuario = require('../models/usuarios')
+const bcrypt = requeire('bcrypt');
+const Usuario = require('../models/usuarios');
 
 
 exports.inserir = (req, res, next) => {
-    let novoUsuario = new Usuario(req.body);        
+    let senha = bcrypt.hashSync(req.body.senha,10);
+    let novoUsuario = new Usuario({
+        nome: req.body.nome,
+        email: req.body.email,
+        senha: senha 
+    });  
+    
+    
     novoUsuario.save((err, usuario) => {
         if(err){
             res.send(err);
