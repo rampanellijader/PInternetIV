@@ -13,6 +13,7 @@ router.delete('/produtos/:id', produtosController.deletar);
 
 
 //Rotas do usuários
+router.post('/auth', usuariosController.buscarPorUsuario);
 router.get('/usuarios', usuariosController.listar);
 router.post('/usuarios', usuariosController.inserir);
 router.get('/usuarios/search', usuariosController.procurar);

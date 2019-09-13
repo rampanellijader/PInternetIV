@@ -6,6 +6,9 @@ const mongoose = require('mongoose');
 const path = require('path');
 
 
+//User Controller para verificar token
+const usuarioController = require('./controllers/usuarios')
+
 
 //Importa Rotas
 const rota = require('./rotas/rotas');
@@ -29,6 +32,10 @@ mongoose.Promise = global.Promise;
 //Log
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
 app.use(logger('combined', { stream: accessLogStream }))
+
+
+//Midlware
+app.use('/api/usuarios', usuarioController.validaToken)
 
 //Uso das rotas
 app.use('/api', rota);

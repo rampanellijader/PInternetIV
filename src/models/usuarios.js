@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 var UsuariosSchema = new mongoose.Schema({
-    nome: String,
+    usuario: String,
     email: String,
     senha: String
 }, {
