@@ -16,7 +16,6 @@ router.delete('/produtos/:id', produtosController.deletar);
 router.post('/auth', usuariosController.buscarPorUsuario);
 router.get('/usuarios', usuariosController.listar);
 router.post('/usuarios', usuariosController.inserir);
-router.get('/usuarios/search', usuariosController.procurar);
 router.get('/usuarios/:id', usuariosController.buscarPorId);
 router.put('/usuarios/:id', usuariosController.atualizar);
 router.delete('/usuarios/:id', usuariosController.deletar);

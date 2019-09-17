@@ -6,7 +6,7 @@ var jwt = require('jsonwebtoken');
 exports.inserir = (req, res, next) => {
     let senha = bcrypt.hashSync(req.body.senha,10);
     let novoUsuario = new Usuario({
-        ususario: req.body.usuario,
+        usuario: req.body.usuario,
         email: req.body.email,
         senha: senha 
     });  
